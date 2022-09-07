@@ -4,7 +4,7 @@
 ARCH=`uname -m`
 if [ "$ARCH" == "mips" ]; then
 	LE=`echo -n I | hexdump -o | awk '{ print (substr($2,6,1)=="1") ? "le" : ""; exit }'`
-	ARCH="mips${le}"
+	ARCH="mips${LE}"
 elif [ "$ARCH" == "armv7l" ]; then
 	ARCH=arm
 elif [ "$ARCH" == "aarch64" ]; then
