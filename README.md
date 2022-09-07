@@ -11,4 +11,4 @@ This project contains a set of Tailscale script for some devices that runs OpenW
 
 ## Tips
 
-- If you want to connect to your tailscale network through your router, just add an interface with device `tailscale0`. Then assign a firewall zone `WAN` that allows packages forward to the tailscale network.
+- If you want to connect to your tailscale network through your router, just add an interface with device `tailscale0`. Then assign a firewall zone `WAN` that allows the router forwards packages to the tailscale network.
